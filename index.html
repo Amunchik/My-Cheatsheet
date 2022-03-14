@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resourses/css/stylesheet.css" type="text/css">
+    <title>CSS Position Cheatsheet</title>
+</head>
+<body>
+<header>
+    <h1>CSS Position Cheatsheet</h1>
+</header>
+<main>
+    <table>
+        <caption>CSS <span class="code">position</span> property</caption>
+        <thead>
+            <tr>
+                <th>Property name</th>
+                <th>Value</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="code">position:</td>
+                <td class="code">static;</td>
+                <td>The element is positioned according to the normal flow of the document.</td>
+            </tr>
+            <tr>
+                <td class="code">position:</td>
+                <td class="code">relative;</td>
+                <td>The element is positioned according to the normal flow of the document, and then offset relative to itself based on the values.</td>
+            </tr>
+            <tr>
+                <td class="code">position:</td>
+                <td class="code">absolute;</td>
+                <td>The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed relative to the initial containing block.</td>
+            </tr>
+            <tr>
+                <td class="code">position:</td>
+                <td class="code">fixed;</td>
+                <td>The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to the initial containing block established by the viewport. Element will remain fixed to its position no matter where the user scrolls on the page.</td>
+            </tr>
+            <tr>
+                <td class="code">position:</td>
+                <td class="code">sticky;</td>
+                <td>The element is positioned according to the normal flow of the document, and then offset relative to its nearest scrolling ancestor and containing block. Keeps an element in the document flow as the user scrolls, but sticks to a specified position as the page is scrolled further. </td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <caption>Additional CSS properties</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Property</th>
+                <th>Values</th>
+                <th>Desctiption</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Offsets</td>
+                <td class="code">top; bottom;
+                    right;
+                    left;
+                </td>
+                <td>in pixels, ems, or percentages, among others</td>
+                <td>Moves the element away from the mentioned side.</td>
+            </tr>
+            <tr>
+                <td>Z-index</td>
+                <td class="code">z-index:</td>
+                <td> integer values, default value = 0</td>
+                <td>Controls how far back or how far forward an element should appear on the web page when elements overlap.</td>
+            </tr>
+            <tr>
+                <td>Display</td>
+                <td class="code">display:</td>
+                <td class="code">inline; block;
+                    inline-block;
+                </td>
+                <td>Dictates if it can share horizontal space with other elements.</td>
+            </tr>
+            <tr>
+                <td>Float</td>
+                <td class="code">float:</td>
+                <td class="code">right; left;</td>
+                <td>Moving an element as far left or as far right as possible in the container. Floated elements must have a width specified.</td>
+            </tr>
+            <tr>
+                <td>Clear</td>
+                <td class="code">clear:</td>
+                <td class="code">right; left; both; none;</td>
+                <td>Specifies how elements should behave when they bump into each other on the page. Mentioned in value side of the element will not touch any other element within the same containing element.</td>
+            </tr>
+        </tbody>
+    </table>
+</main>
+    <footer>
+        <p>Created by <a href="https://github.com/Amunchik/Amunchik.github.io" target="_blank">Amunchik</a></p>
+        <p>For more information about CSS <span class="code">position</span> properties please <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank">visit MDN.</a></p>
+    </footer>
+</body>
+</html>
